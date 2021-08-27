@@ -1,27 +1,83 @@
-# Garage-App
+# Antler
 
-This is the project of term 2 in university for "Advanced Programming" lesson.
-It is all about a garage, which is able to add, edit and remove cars from its database. The database is a simple txt file (I wasn't famaliar with concepts like json or xml). Since it is a garage management app, you can add garages and also add cars to every individual garage. People can also rent cars from these garages.
+This projects aimes to introduce a few concepts regarding Antler language and Understanding the language trees by asking for a pseudo language implementation. 
 
-There is a panel which desplays the total revenue.
-This project is not perfect, since it doesn't carry the fundamental principles of programming e.g object-oriented programming or file organizing. It doesn't mean that it is useless. It was **one of the best of its kind at the time**. 😃
 
-There is a music that plays in background when you run the app. [Music from Jim Yosef](https://www.youtube.com/watch?v=Dfq7M44xYa8). Be sure to check out his masterpieces and ENJOY!😊
 
-### If this "Garage App" is naive why did you upload that on [GitHub](https://github.com)?
-That's actually a good question 😉. My aim is to contribute to open-source community and this project is useful for those who are new to Java programming language.
+### Language Structure
+1. In the beginning, There must be one or many libraries or their components.
+2. Each program could have one or many classes.
+3. Each class includes some variables and functions.
+4. After each command, there must be a semicolon (';').
+5. Naming scheme shall be similar to Java but every name must have at least two characters.
 
-#### Here are some screenshots:
-* Main page
-![Main Page](https://github.com/NavidAG/Garage-App/blob/master/ScreenShots/Main%20Page.png)
+* library implementation syntax and global variables
+```
+func1 = from <library-2> require <function1>;
+lib1 = require <library-1>; 
+...
+```
 
-* Edit page
-![Edit page](https://github.com/NavidAG/Garage-App/blob/master/ScreenShots/Edit%20a%20car.png)
+* Class implementation
+`extends` and `implements` components are optional.
+```
+class <class-Name> extends <parent-class-name> implements <interface-name-1>, <interface-name2>, ... {
+      <statement-1>
+      <statement-2>
+...      
+}
+```
 
-* Rent page
-![Rent page](https://github.com/NavidAG/Garage-App/blob/master/ScreenShots/Renter%20page.png)
+* Variables
+```
+let/const <variable-type> <variable-name>, <variable-name> (= <value>), ...;
+let/const <variable-type> <variable-name> = <variable-name> = ... = <value>;
+let/const <variable-type>[] <variable-name>, <variable-name> (= <value>), ...;
+let/const <variable-type>[] <variable-name> = <variable-name> = ... = <value>;
+```
 
-* Records page
-![Records page](https://github.com/NavidAG/Garage-App/blob/master/ScreenShots/Records.png)
+* This pseudo language features `int`, `fload`, constants like `true`, `false` and `null`.
+* Function and method implantation 
+```
+<func-name> = (<func-args>) => { 
+  <function-Code>
+  return <value> | <variable-name (Optional)
+}
+```
 
-###### Other screenshots are available in [screenshots folder](https://github.com/NavidAG/Garage-App/tree/master/ScreenShots).
+* Loops implementation 
+```
+for (<variable-name> in <variable-range> step <int>) { 
+  <function-code>
+}
+```
+or
+```
+for (auto <variable-name> in <iterator-name>) { 
+  <function-code>
+}
+```
+
+* Conditional statements shall be implemented like Java.
+* Operators:
+```
+% ,// ,/ ,** ,* ,- ,+
+
+=// ,=**,=% ,=/ ,=*,=- ,=+ , =
+
+& ,| ,^ ,~ ,<< ,>>
+```
+* Operators Priorities
+1. ()
+2. **
+3. ~
+4. - +
+5. * / // %
+6. - +
+7. ###
+8. >> <<
+9. & ^ |
+10. == != <>
+11. < <= > >=
+12. = **= /= //= *= &= -= +-
+13. not and or
