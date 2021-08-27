@@ -68,6 +68,7 @@ for (auto <variable-name> in <iterator-name>) {
 & ,| ,^ ,~ ,<< ,>>
 ```
 * Operators Priorities
+```
 1. ()
 2. **
 3. ~
@@ -81,3 +82,4 @@ for (auto <variable-name> in <iterator-name>) {
 11. < <= > >=
 12. = **= /= //= *= &= -= +-
 13. not and or
+```
