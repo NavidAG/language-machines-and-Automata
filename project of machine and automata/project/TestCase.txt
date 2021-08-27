@@ -1,0 +1,64 @@
+ library1 = require library2;
+ library3 = from library1 require function2;
+ int var1, var2, var3 = 20, var4;
+ float var5 = 23.32e-21;
+ const bool var6 = false;
+ type Weekdays int
+ const(
+ //This is an iota
+ Sunday Weekdays = iota + 1
+ Monday
+ );
+
+ class animal{}
+
+ class car extends autoCars implements transportation{
+    function3 = (int aa, bool bb)=>{
+        for(ii in 1:10 step 2){
+            aa = ii;
+            bb = not false;
+        } 
+        return aa;
+    }
+ }
+
+ class main{
+    bool isTrue;
+    function4 = ()=>{
+        for(auto jj in aaa){
+            if(isTrue){
+                function2();
+            } else {
+                FUNCTION34();
+            }
+        }
+    }
+ }
+
+ class mac extends apple{
+    function6 = (float e23)=>{
+        if(3+e23 > 32){
+            Function(e32+3);
+        }
+        switch(e23){
+            case 1: function1();
+            case 2: function2();break;
+            default: function3(e23);
+        }
+    }
+ }
+
+ class calculation{
+    int ll, jj, pp;
+    const bool var10;
+    while(21**32~jj*10+(ll+23*1-42/112) == not var10){
+        ll = 21;
+        ll = jj << pp;
+        pp %=2;
+        jj = pp&23;
+        bool var11, var12;
+        if(va11 != var12 and var10){
+            var11 = var10;
+        }
+    }
+ }
